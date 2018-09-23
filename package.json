@@ -1,0 +1,17 @@
+{
+  "name": "catro-eixos-probeta",
+  "version": "1.0.0",
+  "description": "Sistema de apoyo al desarrollo para catro-eixos-js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "catro-eixos-js": "^3.0.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
