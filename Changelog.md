@@ -10,6 +10,10 @@
 
 - Agregar comprobaciones de init y de familia presente  __PENDIENTE__
 
+## 0.0.2 - [28-09-2018]
+
+- Agregar seccion pre
+
 ## 0.0.1 - [24-09-2018]
 
 - Version inicial
