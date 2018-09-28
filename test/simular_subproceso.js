@@ -18,7 +18,7 @@ describe("Test de una unidad de proceso", function(){
 	})
 
 	it("Permite realizar un subproceso simulado", function(){
-
+		
 		return P.proceso(
 
 			"FamiliaBase.a",
@@ -53,6 +53,45 @@ describe("Test de una unidad de proceso", function(){
 
 		})
 
+	})
+
+	it("Permite reescribir un paso de un proceso", function(){
+
+		return P.proceso(
+
+			"FamiliaBase.a",
+
+			{
+				a: 1,
+				b: 1,
+				restar: true,
+			}
+
+		).parches({
+
+			"FamiliaBase.restador": [
+
+				{
+					tipo: "REESCRITOR_PASO",
+
+					paso: "__restarDigitos",
+
+					codigo: function(){
+
+						this.a("resta", this.arg("a") + this.arg("b"))
+
+					}
+
+				}
+
+			]
+
+
+		}).test(function(resultados){
+
+			expect(resultados.resta).to.equal(2);
+
+		})
 	})
 
 })
