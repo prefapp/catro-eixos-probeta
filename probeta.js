@@ -12,7 +12,7 @@ const parser = new ArgumentParser({
 
 	addHelp: true,
 
-	description: "Sistema de apoyo"
+	description: "Sistema de apoyo al desarrollo con catro-eixos-js"
 
 })
 
@@ -66,11 +66,69 @@ proceso.addArgument(
 
 )
 
+const probeta = subparser.addParser("probeta", {
+
+	addHelp: true,
+
+	description: "Agrega una probeta (test) a un proceso",
+
+	help: "Permite agregar una probeta (test) a un proceso"
+
+})
+
+probeta.addArgument(
+
+	["-n", "--nombre"],
+
+	{
+		action: "store",
+	
+		addHelp: true,
+
+		help: "Establece el nombre del proceso del que crear una probeta",
+
+		required: true
+
+	}
+)
+
+const test = subparser.addParser("test", {
+
+	addHelp: true,
+
+	description: "Realiza un test unitario",
+
+	help: "Permite realizar un test unitario de un proceso"
+
+});
+
+test.addArgument(
+	
+	["-p", "--proceso"],
+
+	{
+		action: "store",
+
+		addHelp: true,
+
+		help: "Nombre del proceso a testear",
+
+		required: true
+	}
+
+)
+
 
 const args = parser.parseArgs();
 
 
 const acciones = {
+
+	test: function(){
+
+		
+
+	},
 
 	proceso: function(args){
 
@@ -98,7 +156,7 @@ const acciones = {
 
 			if(args.t === "con-probeta"){
 
-				acciones.proceso_probeta(args);
+				acciones.probeta(args);
 
 			}
 
@@ -109,7 +167,7 @@ const acciones = {
 
 	},
 
-	proceso_probeta: function(args){
+	probeta: function(args){
 
 		if(!args.nombre)
 			error(`[proceso-probeta]: Falta el nombre del proceso de la probeta a agregar`)
