@@ -1,12 +1,13 @@
 {
   "name": "catro-eixos-probeta",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Sistema de apoyo al desarrollo para catro-eixos-js",
   "main": "index.js",
+  "repository": "https://github.com/prefapp/catro-eixos-probeta",
   "scripts": {
     "test": "mocha --recursive"
   },
-  "author": "",
+  "author": "Francisco Maseda <frmadem@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "argparse": "^1.0.10"
