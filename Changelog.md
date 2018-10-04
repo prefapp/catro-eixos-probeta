@@ -10,6 +10,10 @@
 
 - Agregar comprobaciones de init y de familia presente  __PENDIENTE__
 
+## 0.0.4 - [04-09-2018]
+
+- Agregar seccion post
+
 ## 0.0.3 - [29-09-2018]
 
 - Agregado alijo global
