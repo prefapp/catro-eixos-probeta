@@ -10,6 +10,10 @@
 
 - Agregar comprobaciones de init y de familia presente  __PENDIENTE__
 
+## 0.0.5 - [04-09-2018]
+
+- Corregido error en post
+
 ## 0.0.4 - [04-09-2018]
 
 - Agregar seccion post

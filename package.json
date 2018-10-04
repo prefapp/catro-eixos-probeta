@@ -1,6 +1,6 @@
 {
   "name": "catro-eixos-probeta",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Sistema de apoyo al desarrollo para catro-eixos-js",
   "main": "index.js",
   "repository": "https://github.com/prefapp/catro-eixos-probeta",
