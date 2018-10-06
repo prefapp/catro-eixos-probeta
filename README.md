@@ -7,7 +7,7 @@ Sistema unificado de tests para catro-eixos-js empleando mocha y chai.
 CE-Probeta extiende las unidades básicas de tests para mocha, agregando funcionalidades específicas para utilizar con los procesos de catro-eixos-js
 
 
-## Ejemplo
+### Ejemplo
 
 ```js
 
@@ -42,3 +42,13 @@ describe("Un test para un proceso", function(){
 
 
 ```
+
+## Ejecución de procesos secundarios
+
+Probeta permite ejecutar procesos antes (pre), después (post) y durante (en) la ejecución del proceso principal que se está testeando. 
+
+
+
+
+
+
