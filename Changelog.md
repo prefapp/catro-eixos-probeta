@@ -10,6 +10,12 @@
 
 - Agregar comprobaciones de init y de familia presente  __PENDIENTE__
 
+## 0.0.6 - [06-09-2018]
+
+- Agregar sección `en`
+
+- Agregado método para depurar
+
 ## 0.0.5 - [04-09-2018]
 
 - Corregido error en post
