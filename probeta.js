@@ -92,6 +92,16 @@ probeta.addArgument(
 	}
 )
 
+const estructura = subparser.addParser("estructura", {
+
+	addHelp: true,
+
+	description: "Crea una estructura de proyecto catro-eixos-js",
+
+	help: "Permite crear una estructura de proyecto catro-eixos-js"
+
+})
+
 const test = subparser.addParser("test", {
 
 	addHelp: true,
@@ -205,6 +215,27 @@ const acciones = {
 
 		}
 
+	},
+
+	estructura(){
+
+		if(!process.env["PROBETA_PROYECTO_HOME"])		{
+			error(`[proceso-probeta]: la variable de entorno 'PROBETA_PROYECTO_HOME' no está definida`);
+
+		}
+
+		try{
+
+			escritor.escribirEstructura({
+
+				RUTA: process.env["PROBETA_PROYECTO_HOME"]
+
+			})
+
+		}
+		catch(err){
+			error(`[estructura]: se ha producido un error ${err}`)
+		}
 	}
 
 

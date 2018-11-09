@@ -10,6 +10,10 @@
 
 - Agregar comprobaciones de init y de familia presente  __PENDIENTE__
 
+## 0.0.7 - [09-11-2018]
+
+- Agregada construcción de estructura básica de proyecto
+
 ## 0.0.6 - [06-09-2018]
 
 - Agregar sección `en`
