@@ -10,6 +10,8 @@
 
 - Agregar comprobaciones de init y de familia presente  __PENDIENTE__
 
+- Agregar función a ejecutar en evaluación de resultados en parche de subproceso.
+
 ## 0.0.7 - [09-11-2018]
 
 - Agregada construcción de estructura básica de proyecto
