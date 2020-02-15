@@ -103,4 +103,40 @@ describe("Test de una unidad de proceso", function(){
 		})
 	})
 
+    it("Permite simular un proceso de módulo", function(){
+    
+		return P.proceso(
+
+			"FamiliaBase.c",
+
+			{
+                cadena: "abcd"
+			}
+
+		).parches({
+
+			"externo#FamiliaCadenas.aMayusculas": [{
+
+				tipo: "SIMULADOR_MPROCESO",
+
+				resultados: function(args){
+
+                    return {
+                        
+                        cadena: args.cadena.toUpperCase()
+
+                    }
+				}
+
+            }]
+
+
+		}).test(function(resultados){
+
+            expect(resultados.cadena).to.equal("ABCD")
+
+		})
+    
+    })
+
 })
