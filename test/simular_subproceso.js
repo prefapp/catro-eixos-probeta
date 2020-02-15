@@ -36,6 +36,15 @@ describe("Test de una unidad de proceso", function(){
 				{
 					tipo: "SIMULADOR",
 
+
+                    validar: async (tarea) => {
+
+                        expect(Number.isInteger(tarea.args.a)).to.equal(true)
+
+                        expect(Number.isInteger(tarea.args.b)).to.equal(true)
+
+                    },
+                        
 					resultados: {
 
 						resta: 999
